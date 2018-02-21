@@ -12,6 +12,10 @@
 		9E8784B0203BF53300480EC3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E8784AE203BF53300480EC3 /* Main.storyboard */; };
 		9E8784B2203BF53300480EC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E8784B1203BF53300480EC3 /* Assets.xcassets */; };
 		9E8784B5203BF53300480EC3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E8784B3203BF53300480EC3 /* LaunchScreen.storyboard */; };
+		9E8784C1203D378800480EC3 /* left.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E8784BD203D378700480EC3 /* left.png */; };
+		9E8784C2203D378800480EC3 /* right.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E8784BE203D378800480EC3 /* right.png */; };
+		9E8784C3203D378800480EC3 /* down.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E8784BF203D378800480EC3 /* down.png */; };
+		9E8784C4203D378800480EC3 /* up.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E8784C0203D378800480EC3 /* up.png */; };
 		D2F9017A67E0455FC8E91051 /* Pods_mobile_lab_websockets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD894C8A15E4767447B74EDE /* Pods_mobile_lab_websockets.framework */; };
 /* End PBXBuildFile section */
 
@@ -24,6 +28,10 @@
 		9E8784B1203BF53300480EC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9E8784B4203BF53300480EC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9E8784B6203BF53300480EC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E8784BD203D378700480EC3 /* left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = left.png; sourceTree = "<group>"; };
+		9E8784BE203D378800480EC3 /* right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = right.png; sourceTree = "<group>"; };
+		9E8784BF203D378800480EC3 /* down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = down.png; sourceTree = "<group>"; };
+		9E8784C0203D378800480EC3 /* up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = up.png; sourceTree = "<group>"; };
 		D6758F9A99BA6DFBAE11A0A1 /* Pods-mobile-lab-websockets.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mobile-lab-websockets.release.xcconfig"; path = "Pods/Target Support Files/Pods-mobile-lab-websockets/Pods-mobile-lab-websockets.release.xcconfig"; sourceTree = "<group>"; };
 		DD894C8A15E4767447B74EDE /* Pods_mobile_lab_websockets.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mobile_lab_websockets.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -61,6 +69,7 @@
 		9E8784A9203BF53300480EC3 /* mobile-lab-websockets */ = {
 			isa = PBXGroup;
 			children = (
+				9E8784BC203D377400480EC3 /* Resources */,
 				9E8784AA203BF53300480EC3 /* AppDelegate.swift */,
 				9E8784AC203BF53300480EC3 /* ViewController.swift */,
 				9E8784AE203BF53300480EC3 /* Main.storyboard */,
@@ -69,6 +78,17 @@
 				9E8784B6203BF53300480EC3 /* Info.plist */,
 			);
 			path = "mobile-lab-websockets";
+			sourceTree = "<group>";
+		};
+		9E8784BC203D377400480EC3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9E8784BF203D378800480EC3 /* down.png */,
+				9E8784BD203D378700480EC3 /* left.png */,
+				9E8784BE203D378800480EC3 /* right.png */,
+				9E8784C0203D378800480EC3 /* up.png */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		E1BD8FFCCCC23BB4FC47E73E /* Pods */ = {
@@ -150,9 +170,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E8784C4203D378800480EC3 /* up.png in Resources */,
+				9E8784C2203D378800480EC3 /* right.png in Resources */,
 				9E8784B5203BF53300480EC3 /* LaunchScreen.storyboard in Resources */,
 				9E8784B2203BF53300480EC3 /* Assets.xcassets in Resources */,
+				9E8784C1203D378800480EC3 /* left.png in Resources */,
 				9E8784B0203BF53300480EC3 /* Main.storyboard in Resources */,
+				9E8784C3203D378800480EC3 /* down.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

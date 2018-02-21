@@ -6,6 +6,9 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,44 +21,74 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OqD-1t-BeY">
-                                <rect key="frame" x="-0.5" y="283.5" width="375" height="60"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VO5-Uq-VNa">
+                                <rect key="frame" x="124.5" y="218.5" width="125" height="125"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="T23-aP-oAi"/>
+                                    <constraint firstAttribute="width" secondItem="VO5-Uq-VNa" secondAttribute="height" multiplier="1:1" id="Ml0-gH-3rx"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="30"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zW0-zR-bN3">
-                                <rect key="frame" x="0.5" y="343.5" width="375" height="60"/>
+                                <state key="normal" backgroundImage="up.png"/>
+                                <connections>
+                                    <action selector="didTapUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fNz-3m-27W"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WM2-0d-6i4">
+                                <rect key="frame" x="125" y="343.5" width="125" height="125"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="Zc6-zb-acS"/>
+                                    <constraint firstAttribute="width" secondItem="WM2-0d-6i4" secondAttribute="height" multiplier="1:1" id="fT8-hh-dsU"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <state key="normal" backgroundImage="down.png"/>
+                                <connections>
+                                    <action selector="didTapDown:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3nw-K5-Lq8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lNX-GS-tej">
+                                <rect key="frame" x="0.0" y="281" width="125" height="125"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="lNX-GS-tej" secondAttribute="height" multiplier="1:1" id="MGI-vW-Ppl"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="left.png"/>
+                                <connections>
+                                    <action selector="didTapLeft:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JLD-v1-wLE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hue-aT-ySp">
+                                <rect key="frame" x="250" y="281" width="125" height="125"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="hue-aT-ySp" secondAttribute="height" multiplier="1:1" id="xiD-3b-TRS"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="right.png"/>
+                                <connections>
+                                    <action selector="didTapRight:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cwG-nl-6W0"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="OqD-1t-BeY" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="8Sm-mw-ABt"/>
-                            <constraint firstItem="OqD-1t-BeY" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="bid-3B-OPD"/>
-                            <constraint firstItem="zW0-zR-bN3" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="30" id="cVK-dd-S19"/>
-                            <constraint firstItem="zW0-zR-bN3" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="j1d-ba-jN0"/>
-                            <constraint firstItem="OqD-1t-BeY" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="-30" id="s38-AT-zFQ"/>
-                            <constraint firstItem="zW0-zR-bN3" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="z1P-Xs-44H"/>
+                            <constraint firstItem="lNX-GS-tej" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="6Vg-6N-31j"/>
+                            <constraint firstItem="VO5-Uq-VNa" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="7MV-Me-XV4"/>
+                            <constraint firstItem="VO5-Uq-VNa" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="1/3" id="GZi-tb-pht"/>
+                            <constraint firstItem="lNX-GS-tej" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="1/3" id="Hpf-J7-cWg"/>
+                            <constraint firstItem="WM2-0d-6i4" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="1/3" id="OH6-hu-Lnp"/>
+                            <constraint firstItem="hue-aT-ySp" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="1/3" id="UmY-0O-4yV"/>
+                            <constraint firstItem="hue-aT-ySp" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="YAT-VP-lCq"/>
+                            <constraint firstItem="VO5-Uq-VNa" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="gDD-aA-9MN"/>
+                            <constraint firstItem="WM2-0d-6i4" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="pVf-Qm-efv"/>
+                            <constraint firstItem="lNX-GS-tej" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="uf5-c7-z3i"/>
+                            <constraint firstItem="hue-aT-ySp" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="xDE-Jy-UTc"/>
+                            <constraint firstItem="WM2-0d-6i4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="xkk-GX-R6O"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <connections>
-                        <outlet property="messageLabel" destination="zW0-zR-bN3" id="Wjc-hh-m1a"/>
-                        <outlet property="timeLabel" destination="OqD-1t-BeY" id="v9g-g0-5Fz"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="104.7976011994003"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="down.png" width="512" height="512"/>
+        <image name="left.png" width="512" height="512"/>
+        <image name="right.png" width="512" height="512"/>
+        <image name="up.png" width="512" height="512"/>
+    </resources>
 </document>
