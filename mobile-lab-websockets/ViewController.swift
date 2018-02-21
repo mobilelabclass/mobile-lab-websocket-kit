@@ -52,7 +52,8 @@ class ViewController: UIViewController, WebSocketDelegate {
         
         // let urlString = "ws://162.243.47.128:1024/"
         //let urlString = "ws://10.0.0.20:1024/"
-        let urlString = "ws://websockets.mobilelabclass.com:1024/"
+        let urlString = "ws://192.168.0.24:1024/"
+        //let urlString = "ws://websockets.mobilelabclass.com:1024/"
     
         // Create WebSocket
         socket = WebSocket(url: URL(string: urlString)!)
