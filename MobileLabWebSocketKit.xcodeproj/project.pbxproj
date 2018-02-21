@@ -7,33 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4EF721CEF9A5D53408F61CDC /* Pods_MobileLabWebSocketKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED4E4FC41C5245B3CD7E6534 /* Pods_MobileLabWebSocketKit.framework */; };
+		6A5DA281203E06EC0092170D /* up.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A5DA277203E06EC0092170D /* up.png */; };
+		6A5DA282203E06EC0092170D /* down.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A5DA278203E06EC0092170D /* down.png */; };
+		6A5DA283203E06EC0092170D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A5DA279203E06EC0092170D /* Assets.xcassets */; };
+		6A5DA284203E06EC0092170D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A5DA27A203E06EC0092170D /* LaunchScreen.storyboard */; };
+		6A5DA285203E06EC0092170D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A5DA27C203E06EC0092170D /* Main.storyboard */; };
+		6A5DA286203E06EC0092170D /* left.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A5DA27E203E06EC0092170D /* left.png */; };
+		6A5DA288203E06EC0092170D /* right.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A5DA280203E06EC0092170D /* right.png */; };
 		9E8784AB203BF53300480EC3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8784AA203BF53300480EC3 /* AppDelegate.swift */; };
 		9E8784AD203BF53300480EC3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8784AC203BF53300480EC3 /* ViewController.swift */; };
-		9E8784B0203BF53300480EC3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E8784AE203BF53300480EC3 /* Main.storyboard */; };
-		9E8784B2203BF53300480EC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E8784B1203BF53300480EC3 /* Assets.xcassets */; };
-		9E8784B5203BF53300480EC3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E8784B3203BF53300480EC3 /* LaunchScreen.storyboard */; };
-		9E8784C1203D378800480EC3 /* left.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E8784BD203D378700480EC3 /* left.png */; };
-		9E8784C2203D378800480EC3 /* right.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E8784BE203D378800480EC3 /* right.png */; };
-		9E8784C3203D378800480EC3 /* down.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E8784BF203D378800480EC3 /* down.png */; };
-		9E8784C4203D378800480EC3 /* up.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E8784C0203D378800480EC3 /* up.png */; };
-		D2F9017A67E0455FC8E91051 /* Pods_mobile_lab_websockets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD894C8A15E4767447B74EDE /* Pods_mobile_lab_websockets.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		33C37A1E9C109856C13043C1 /* Pods-mobile-lab-websockets.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mobile-lab-websockets.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mobile-lab-websockets/Pods-mobile-lab-websockets.debug.xcconfig"; sourceTree = "<group>"; };
-		9E8784A7203BF53300480EC3 /* mobile-lab-websockets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mobile-lab-websockets.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2795774AEFED2F2367C4CB1F /* Pods-MobileLabWebSocketKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileLabWebSocketKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-MobileLabWebSocketKit/Pods-MobileLabWebSocketKit.release.xcconfig"; sourceTree = "<group>"; };
+		46C2E01B9E82F0FD06058279 /* Pods-MobileLabWebSocketKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileLabWebSocketKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MobileLabWebSocketKit/Pods-MobileLabWebSocketKit.debug.xcconfig"; sourceTree = "<group>"; };
+		6A5DA277203E06EC0092170D /* up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = up.png; sourceTree = "<group>"; };
+		6A5DA278203E06EC0092170D /* down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = down.png; sourceTree = "<group>"; };
+		6A5DA279203E06EC0092170D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6A5DA27B203E06EC0092170D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6A5DA27D203E06EC0092170D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6A5DA27E203E06EC0092170D /* left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = left.png; sourceTree = "<group>"; };
+		6A5DA27F203E06EC0092170D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A5DA280203E06EC0092170D /* right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = right.png; sourceTree = "<group>"; };
+		9E8784A7203BF53300480EC3 /* MobileLabWebSocketKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobileLabWebSocketKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E8784AA203BF53300480EC3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9E8784AC203BF53300480EC3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9E8784AF203BF53300480EC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		9E8784B1203BF53300480EC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		9E8784B4203BF53300480EC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		9E8784B6203BF53300480EC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9E8784BD203D378700480EC3 /* left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = left.png; sourceTree = "<group>"; };
-		9E8784BE203D378800480EC3 /* right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = right.png; sourceTree = "<group>"; };
-		9E8784BF203D378800480EC3 /* down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = down.png; sourceTree = "<group>"; };
-		9E8784C0203D378800480EC3 /* up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = up.png; sourceTree = "<group>"; };
-		D6758F9A99BA6DFBAE11A0A1 /* Pods-mobile-lab-websockets.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mobile-lab-websockets.release.xcconfig"; path = "Pods/Target Support Files/Pods-mobile-lab-websockets/Pods-mobile-lab-websockets.release.xcconfig"; sourceTree = "<group>"; };
-		DD894C8A15E4767447B74EDE /* Pods_mobile_lab_websockets.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mobile_lab_websockets.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED4E4FC41C5245B3CD7E6534 /* Pods_MobileLabWebSocketKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobileLabWebSocketKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,17 +41,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2F9017A67E0455FC8E91051 /* Pods_mobile_lab_websockets.framework in Frameworks */,
+				4EF721CEF9A5D53408F61CDC /* Pods_MobileLabWebSocketKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6A5DA276203E06EC0092170D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6A5DA27C203E06EC0092170D /* Main.storyboard */,
+				6A5DA27A203E06EC0092170D /* LaunchScreen.storyboard */,
+				6A5DA279203E06EC0092170D /* Assets.xcassets */,
+				6A5DA27F203E06EC0092170D /* Info.plist */,
+				6A5DA277203E06EC0092170D /* up.png */,
+				6A5DA278203E06EC0092170D /* down.png */,
+				6A5DA27E203E06EC0092170D /* left.png */,
+				6A5DA280203E06EC0092170D /* right.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		9E87849E203BF53300480EC3 = {
 			isa = PBXGroup;
 			children = (
-				9E8784A9203BF53300480EC3 /* mobile-lab-websockets */,
+				9E8784A9203BF53300480EC3 /* MobileLabWebSocketKit */,
 				9E8784A8203BF53300480EC3 /* Products */,
 				E1BD8FFCCCC23BB4FC47E73E /* Pods */,
 				F8FDC0E824E98EC06B1BBBB6 /* Frameworks */,
@@ -61,41 +76,26 @@
 		9E8784A8203BF53300480EC3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9E8784A7203BF53300480EC3 /* mobile-lab-websockets.app */,
+				9E8784A7203BF53300480EC3 /* MobileLabWebSocketKit.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9E8784A9203BF53300480EC3 /* mobile-lab-websockets */ = {
+		9E8784A9203BF53300480EC3 /* MobileLabWebSocketKit */ = {
 			isa = PBXGroup;
 			children = (
-				9E8784BC203D377400480EC3 /* Resources */,
 				9E8784AA203BF53300480EC3 /* AppDelegate.swift */,
 				9E8784AC203BF53300480EC3 /* ViewController.swift */,
-				9E8784AE203BF53300480EC3 /* Main.storyboard */,
-				9E8784B1203BF53300480EC3 /* Assets.xcassets */,
-				9E8784B3203BF53300480EC3 /* LaunchScreen.storyboard */,
-				9E8784B6203BF53300480EC3 /* Info.plist */,
+				6A5DA276203E06EC0092170D /* Resources */,
 			);
-			path = "mobile-lab-websockets";
-			sourceTree = "<group>";
-		};
-		9E8784BC203D377400480EC3 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				9E8784BF203D378800480EC3 /* down.png */,
-				9E8784BD203D378700480EC3 /* left.png */,
-				9E8784BE203D378800480EC3 /* right.png */,
-				9E8784C0203D378800480EC3 /* up.png */,
-			);
-			path = Resources;
+			path = MobileLabWebSocketKit;
 			sourceTree = "<group>";
 		};
 		E1BD8FFCCCC23BB4FC47E73E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				33C37A1E9C109856C13043C1 /* Pods-mobile-lab-websockets.debug.xcconfig */,
-				D6758F9A99BA6DFBAE11A0A1 /* Pods-mobile-lab-websockets.release.xcconfig */,
+				46C2E01B9E82F0FD06058279 /* Pods-MobileLabWebSocketKit.debug.xcconfig */,
+				2795774AEFED2F2367C4CB1F /* Pods-MobileLabWebSocketKit.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -103,7 +103,7 @@
 		F8FDC0E824E98EC06B1BBBB6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DD894C8A15E4767447B74EDE /* Pods_mobile_lab_websockets.framework */,
+				ED4E4FC41C5245B3CD7E6534 /* Pods_MobileLabWebSocketKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -111,9 +111,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9E8784A6203BF53300480EC3 /* mobile-lab-websockets */ = {
+		9E8784A6203BF53300480EC3 /* MobileLabWebSocketKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9E8784B9203BF53300480EC3 /* Build configuration list for PBXNativeTarget "mobile-lab-websockets" */;
+			buildConfigurationList = 9E8784B9203BF53300480EC3 /* Build configuration list for PBXNativeTarget "MobileLabWebSocketKit" */;
 			buildPhases = (
 				814F5A2BE83BD715868E39C2 /* [CP] Check Pods Manifest.lock */,
 				9E8784A3203BF53300480EC3 /* Sources */,
@@ -126,9 +126,9 @@
 			);
 			dependencies = (
 			);
-			name = "mobile-lab-websockets";
+			name = MobileLabWebSocketKit;
 			productName = "mobile-lab-websockets";
-			productReference = 9E8784A7203BF53300480EC3 /* mobile-lab-websockets.app */;
+			productReference = 9E8784A7203BF53300480EC3 /* MobileLabWebSocketKit.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -147,7 +147,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 9E8784A2203BF53300480EC3 /* Build configuration list for PBXProject "mobile-lab-websockets" */;
+			buildConfigurationList = 9E8784A2203BF53300480EC3 /* Build configuration list for PBXProject "MobileLabWebSocketKit" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -160,7 +160,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9E8784A6203BF53300480EC3 /* mobile-lab-websockets */,
+				9E8784A6203BF53300480EC3 /* MobileLabWebSocketKit */,
 			);
 		};
 /* End PBXProject section */
@@ -170,13 +170,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9E8784C4203D378800480EC3 /* up.png in Resources */,
-				9E8784C2203D378800480EC3 /* right.png in Resources */,
-				9E8784B5203BF53300480EC3 /* LaunchScreen.storyboard in Resources */,
-				9E8784B2203BF53300480EC3 /* Assets.xcassets in Resources */,
-				9E8784C1203D378800480EC3 /* left.png in Resources */,
-				9E8784B0203BF53300480EC3 /* Main.storyboard in Resources */,
-				9E8784C3203D378800480EC3 /* down.png in Resources */,
+				6A5DA281203E06EC0092170D /* up.png in Resources */,
+				6A5DA285203E06EC0092170D /* Main.storyboard in Resources */,
+				6A5DA288203E06EC0092170D /* right.png in Resources */,
+				6A5DA286203E06EC0092170D /* left.png in Resources */,
+				6A5DA284203E06EC0092170D /* LaunchScreen.storyboard in Resources */,
+				6A5DA283203E06EC0092170D /* Assets.xcassets in Resources */,
+				6A5DA282203E06EC0092170D /* down.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,7 +195,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mobile-lab-websockets/Pods-mobile-lab-websockets-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MobileLabWebSocketKit/Pods-MobileLabWebSocketKit-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		801A9E0FC01FFF1B4461EAA7 /* [CP] Embed Pods Frameworks */ = {
@@ -204,7 +204,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-mobile-lab-websockets/Pods-mobile-lab-websockets-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-MobileLabWebSocketKit/Pods-MobileLabWebSocketKit-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -213,7 +213,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mobile-lab-websockets/Pods-mobile-lab-websockets-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MobileLabWebSocketKit/Pods-MobileLabWebSocketKit-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		814F5A2BE83BD715868E39C2 /* [CP] Check Pods Manifest.lock */ = {
@@ -227,7 +227,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-mobile-lab-websockets-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-MobileLabWebSocketKit-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -249,20 +249,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		9E8784AE203BF53300480EC3 /* Main.storyboard */ = {
+		6A5DA27A203E06EC0092170D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				9E8784AF203BF53300480EC3 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		9E8784B3203BF53300480EC3 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9E8784B4203BF53300480EC3 /* Base */,
+				6A5DA27B203E06EC0092170D /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		6A5DA27C203E06EC0092170D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6A5DA27D203E06EC0092170D /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -377,14 +377,14 @@
 		};
 		9E8784BA203BF53300480EC3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 33C37A1E9C109856C13043C1 /* Pods-mobile-lab-websockets.debug.xcconfig */;
+			baseConfigurationReference = 46C2E01B9E82F0FD06058279 /* Pods-MobileLabWebSocketKit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HY8AUX8L27;
-				INFOPLIST_FILE = "mobile-lab-websockets/Info.plist";
+				INFOPLIST_FILE = MobileLabWebSocketKit/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.mobilelabclass.mobile-lab-websockets";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobilelabclass.MobileLabWebSocketKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -393,14 +393,14 @@
 		};
 		9E8784BB203BF53300480EC3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D6758F9A99BA6DFBAE11A0A1 /* Pods-mobile-lab-websockets.release.xcconfig */;
+			baseConfigurationReference = 2795774AEFED2F2367C4CB1F /* Pods-MobileLabWebSocketKit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HY8AUX8L27;
-				INFOPLIST_FILE = "mobile-lab-websockets/Info.plist";
+				INFOPLIST_FILE = MobileLabWebSocketKit/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.mobilelabclass.mobile-lab-websockets";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobilelabclass.MobileLabWebSocketKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -410,7 +410,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9E8784A2203BF53300480EC3 /* Build configuration list for PBXProject "mobile-lab-websockets" */ = {
+		9E8784A2203BF53300480EC3 /* Build configuration list for PBXProject "MobileLabWebSocketKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9E8784B7203BF53300480EC3 /* Debug */,
@@ -419,7 +419,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9E8784B9203BF53300480EC3 /* Build configuration list for PBXNativeTarget "mobile-lab-websockets" */ = {
+		9E8784B9203BF53300480EC3 /* Build configuration list for PBXNativeTarget "MobileLabWebSocketKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9E8784BA203BF53300480EC3 /* Debug */,
