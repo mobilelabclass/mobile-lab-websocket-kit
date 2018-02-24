@@ -16,7 +16,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MobileLabWebSocketsKit" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MobileLabWebSocketKit" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -62,25 +62,34 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Player Id" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="abH-TG-gQi">
-                                <rect key="frame" x="16" y="36" width="343" height="39"/>
+                                <rect key="frame" x="144" y="36" width="215" height="36"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" red="0.87843137250000003" green="0.2274509804" blue="0.24313725489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="29"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="26"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="done"/>
                             </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ffc-v8-AXa">
+                                <rect key="frame" x="16" y="36" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="0Iq-R1-d2C"/>
+                                    <constraint firstAttribute="width" constant="120" id="2zT-8b-K1N"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="ffc-v8-AXa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="4Xv-Ho-MKw"/>
                             <constraint firstItem="lNX-GS-tej" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="6Vg-6N-31j"/>
                             <constraint firstItem="VO5-Uq-VNa" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="7MV-Me-XV4"/>
                             <constraint firstItem="VO5-Uq-VNa" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="1/3" id="GZi-tb-pht"/>
                             <constraint firstItem="lNX-GS-tej" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="1/3" id="Hpf-J7-cWg"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="abH-TG-gQi" secondAttribute="trailing" constant="16" id="M53-ab-mei"/>
                             <constraint firstItem="WM2-0d-6i4" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="1/3" id="OH6-hu-Lnp"/>
+                            <constraint firstItem="ffc-v8-AXa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Sp5-gQ-mg5"/>
                             <constraint firstItem="hue-aT-ySp" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="1/3" id="UmY-0O-4yV"/>
                             <constraint firstItem="hue-aT-ySp" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="YAT-VP-lCq"/>
                             <constraint firstItem="VO5-Uq-VNa" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="gDD-aA-9MN"/>
-                            <constraint firstItem="abH-TG-gQi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="hVK-9G-4cJ"/>
+                            <constraint firstItem="abH-TG-gQi" firstAttribute="leading" secondItem="ffc-v8-AXa" secondAttribute="trailing" constant="8" id="jOm-kR-Hgk"/>
                             <constraint firstItem="WM2-0d-6i4" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="pVf-Qm-efv"/>
                             <constraint firstItem="lNX-GS-tej" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="uf5-c7-z3i"/>
                             <constraint firstItem="hue-aT-ySp" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="xDE-Jy-UTc"/>
@@ -91,6 +100,7 @@
                     </view>
                     <connections>
                         <outlet property="playerIdTextField" destination="abH-TG-gQi" id="lmJ-G8-azj"/>
+                        <outlet property="profileImageView" destination="ffc-v8-AXa" id="1OS-UY-xGv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
