@@ -26,14 +26,16 @@ enum DirectionCode: String {
 
 let playerIdKey = "PLAYER_ID";
 
+
 class ViewController: UIViewController, WebSocketDelegate, UITextFieldDelegate {
 
-    // User standar defaults for storage.
+    // User UserDefaults for simple storage.
     var defaults: UserDefaults!
     
     // Object for managing the web socket.
     var socket: WebSocket?
     
+
     // Button actions connected from storyboard.
     @IBAction func didTapUp(_ sender: UIButton) {
         sendDirectionMessage(.up)
@@ -54,19 +56,20 @@ class ViewController: UIViewController, WebSocketDelegate, UITextFieldDelegate {
     // Input text field.
     @IBOutlet weak var playerIdTextField: UITextField!
     
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // URL of web server.
         let urlString = "ws://websockets.mobilelabclass.com:1024/"
     
-        // Create WebSocket
+        // Create a WebSocket.
         socket = WebSocket(url: URL(string: urlString)!)
         
         // Assign WebSocket delegate to self
         socket?.delegate = self
         
-        // Connect
+        // Connect.
         socket?.connect()
         
         // Assigning notifications to when the app becomes active or inactive.
@@ -76,7 +79,8 @@ class ViewController: UIViewController, WebSocketDelegate, UITextFieldDelegate {
         // Set delegate for text field to conform to protocol.
         playerIdTextField.delegate = self
 
-        // Set to standard user defaults.
+
+        // Init user defaults object for storage.
         defaults = UserDefaults.standard
     
         // If there is a player id saved, set text field.
@@ -86,23 +90,8 @@ class ViewController: UIViewController, WebSocketDelegate, UITextFieldDelegate {
     
     }
 
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-    }
 
-    func checkPlayerId() -> Bool {
-        if defaults.string(forKey: playerIdKey) == nil {
-            // Create an alert message if user has not entered an ID.
-            let alert = UIAlertController(title: "Enter Player Id", message: nil, preferredStyle: UIAlertControllerStyle.alert)
-            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-            self.present(alert, animated: true, completion: nil)
-
-            return false
-        } else {
-            return true
-        }
-    }
-    
+    // Textfield delegate method.
     // Update player id in user defaults when "Done" is pressed.
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         view.endEditing(true)
@@ -119,12 +108,15 @@ class ViewController: UIViewController, WebSocketDelegate, UITextFieldDelegate {
         return false
     }
     
+
+    // Helper method for displaying a alert view.
     func presentAlertMessage(message: String) {
         let alert = UIAlertController(title: message, message: nil, preferredStyle: UIAlertControllerStyle.alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
         self.present(alert, animated: true, completion: nil)
     }
     
+
     // WebSocket delegate methods
     func websocketDidConnect(socket: WebSocketClient) {
         print("✅ Connected")
@@ -141,32 +133,28 @@ class ViewController: UIViewController, WebSocketDelegate, UITextFieldDelegate {
     func websocketDidReceiveData(socket: WebSocketClient, data: Data) {
         // print("<<< Received data:", data)
     }
-    
-    func sendMessage(_ message: String) {
 
-        // Send if there is a valid player id set.
-        if let playerId: String = defaults.string(forKey: playerIdKey) {
-
-            let message = "\(playerId), \(message)"
-            socket?.write(string: message) {
-                // This is a completion block.
-                // We can write custom code here that will run once the message is sent.
-                print("⬆️ sent message to server: ", message)
-            }
-
-        } else {
-
-            presentAlertMessage(message: "Enter Player Id")
-
-        }
-    }
-    
     func sendDirectionMessage(_ code: DirectionCode) {
         // Get the raw string value from the DirectionCode enum
         // that we created at the top of this program.
         sendMessage(code.rawValue)
     }
-    
+
+    func sendMessage(_ message: String) {
+        // Check if there is a valid player id set.
+        guard let playerId = defaults.string(forKey: playerIdKey) else {
+            presentAlertMessage(message: "Enter Player Id")
+            return
+        }
+
+        // Construct server message and write to socket.
+        let message = "\(playerId), \(message)"
+        socket?.write(string: message) {
+            // This is a completion block.
+            // We can write custom code here that will run once the message is sent.
+            print("⬆️ sent message to server: ", message)
+        }
+    }
     
     @objc func willResignActive() {
         print("💡 Application will resign active. Disconnecting socket.")
@@ -178,6 +166,7 @@ class ViewController: UIViewController, WebSocketDelegate, UITextFieldDelegate {
         socket?.connect()
     }
 }
+
 
 // Some helpers using extensions
 extension Date
