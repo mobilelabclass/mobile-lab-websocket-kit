@@ -70,6 +70,7 @@
                             </textField>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ffc-v8-AXa">
                                 <rect key="frame" x="16" y="36" width="120" height="120"/>
+                                <color key="backgroundColor" red="0.87843137250000003" green="0.2274509804" blue="0.24313725489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="120" id="0Iq-R1-d2C"/>
                                     <constraint firstAttribute="width" constant="120" id="2zT-8b-K1N"/>

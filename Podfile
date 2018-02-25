@@ -7,7 +7,5 @@ target 'MobileLabWebSocketKit' do
 
   # Pods for MobileLabWebSocketKit
   pod 'Starscream', '3.0.4'
-  pod 'SDWebImage', '~> 4.0'
-  pod 'SwiftyJSON'
 
 end

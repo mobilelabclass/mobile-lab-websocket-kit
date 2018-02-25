@@ -8,7 +8,6 @@
 
 import UIKit
 import Starscream    // Socket library
-import SDWebImage    // Image loader library
 
 
 // Create an enumeration for direction commands.
@@ -57,6 +56,7 @@ class ViewController: UIViewController, WebSocketDelegate, UITextFieldDelegate {
     // Input text field.
     @IBOutlet weak var playerIdTextField: UITextField!
     
+    // Profile image view.
     @IBOutlet weak var profileImageView: UIImageView!
     
     
@@ -90,10 +90,6 @@ class ViewController: UIViewController, WebSocketDelegate, UITextFieldDelegate {
         if let playerId = defaults.string(forKey: playerIdKey) {
             playerIdTextField.text = playerId
         }
-    
-
-        profileImageView.sd_setImage(with: URL(string: "https://dog.ceo/api/img/beagle/n02088364_2652.jpg"))
-    
     }
 
 
