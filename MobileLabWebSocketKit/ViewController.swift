@@ -85,11 +85,13 @@ class ViewController: UIViewController, WebSocketDelegate, UITextFieldDelegate {
 
         // Init user defaults object for storage.
         defaults = UserDefaults.standard
-    
+
+        // Get USER DEFAULTS data. ////////////
         // If there is a player id saved, set text field.
         if let playerId = defaults.string(forKey: playerIdKey) {
             playerIdTextField.text = playerId
         }
+        //////////////////////////////////////
     }
 
 
@@ -98,13 +100,16 @@ class ViewController: UIViewController, WebSocketDelegate, UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         view.endEditing(true)
 
-        // Check text field is not empty and save to user defaults.
+        // Check text field is not empty, otherwise save to user defaults.
         if (textField.text?.isEmpty)! {
             presentAlertMessage(message: "Enter Valid Player Id")
             textField.text = defaults.string(forKey: playerIdKey)!
         } else {
+
+            // Set USER DEFAULTS data. ////////////
             defaults.set(textField.text!, forKey: playerIdKey)
             presentAlertMessage(message: "Player Id Saved!")
+            //////////////////////////////////////
         }
         
         return false
@@ -149,13 +154,14 @@ class ViewController: UIViewController, WebSocketDelegate, UITextFieldDelegate {
             return
         }
 
-        // Construct server message and write to socket.
+        // Construct server message and write to socket. ///////////
         let message = "\(playerId), \(message)"
         socket?.write(string: message) {
             // This is a completion block.
             // We can write custom code here that will run once the message is sent.
             print("⬆️ sent message to server: ", message)
         }
+        ///////////////////////////////////////////////////////////
     }
     
     @objc func willResignActive() {
