@@ -56,10 +56,6 @@ class ViewController: UIViewController, WebSocketDelegate, UITextFieldDelegate {
     // Input text field.
     @IBOutlet weak var playerIdTextField: UITextField!
     
-    // Profile image view.
-    @IBOutlet weak var profileImageView: UIImageView!
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
