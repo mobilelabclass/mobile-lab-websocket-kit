@@ -6,6 +6,6 @@ target 'MobileLabWebSocketKit' do
   use_frameworks!
 
   # Pods for MobileLabWebSocketKit
-  pod 'Starscream', '3.0.4'
+  pod 'Starscream', '3.0.6'
 
 end

@@ -63,11 +63,12 @@ class ViewController: UIViewController, WebSocketDelegate, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // URL of web server.
-        let urlString = "ws://websockets.mobilelabclass.com:1024/"
+        // URL of the websocket server.
+        let urlString = "wss://gameserver.mobilelabclass.com"
     
         // Create a WebSocket.
         socket = WebSocket(url: URL(string: urlString)!)
+        
         
         // Assign WebSocket delegate to self
         socket?.delegate = self
@@ -75,9 +76,9 @@ class ViewController: UIViewController, WebSocketDelegate, UITextFieldDelegate {
         // Connect.
         socket?.connect()
         
-        // Assigning notifications to when the app becomes active or inactive.
-        NotificationCenter.default.addObserver(self, selector: #selector(willResignActive), name: NSNotification.Name.UIApplicationWillResignActive, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(didBecomeActive), name: NSNotification.Name.UIApplicationDidBecomeActive, object: nil)
+        // Assigning notifications to handle when the app becomes active or inactive.
+        NotificationCenter.default.addObserver(self, selector: #selector(willResignActive), name: UIApplication.willResignActiveNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(didBecomeActive), name: UIApplication.didBecomeActiveNotification, object: nil)
     
         // Set delegate for text field to conform to protocol.
         playerIdTextField.delegate = self
@@ -118,7 +119,7 @@ class ViewController: UIViewController, WebSocketDelegate, UITextFieldDelegate {
 
     // Helper method for displaying a alert view.
     func presentAlertMessage(message: String) {
-        let alert = UIAlertController(title: message, message: nil, preferredStyle: UIAlertControllerStyle.alert)
+        let alert = UIAlertController(title: message, message: nil, preferredStyle: UIAlertController.Style.alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
         self.present(alert, animated: true, completion: nil)
     }
@@ -130,7 +131,7 @@ class ViewController: UIViewController, WebSocketDelegate, UITextFieldDelegate {
     }
     
     func websocketDidDisconnect(socket: WebSocketClient, error: Error?) {
-        print("🛑 Disconnected")
+        print("🛑 Disconnected:", error ?? "No message")
     }
     
     func websocketDidReceiveMessage(socket: WebSocketClient, text: String) {
